@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=20mm,
+ right=20mm,
+ top=25mm
+ }
+\usepackage[utf8]{inputenc} 
+\usepackage[shortlabels]{enumitem}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[rflt]{floatflt}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{longtable,multirow,booktabs}
+\usepackage{cite}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage[]{sidecap}
+\usepackage{adjustbox}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage[]{xcolor}
+
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{Daniel Doña Álvarez}%%LeftHead
+\rhead{PEC 1}%%RightHead
+\cfoot{\thepage}
+
+\setlength{\columnsep}{4mm}
+\setlength{\parindent}{5mm}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\headheight}{30pt}
+
+
+% Estructura por componentes
+
+\begin{document}
+% Portada
+\newgeometry{top=10mm, left=10mm, right=10mm, bottom=20mm}
+
+\input{portada.tex} 
+\newpage
+\restoregeometry
+% Índice
+\renewcommand*\contentsname{Contenidos}
+\tableofcontents 
+\newpage
+% Contenido (quizá podría capitularizarse)
+\input{contenido.tex}
+\end{document}
+
